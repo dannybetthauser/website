@@ -5,10 +5,8 @@ on:
     paths:
       - 'inbox/**'
       - 'images/**'
-      - 'thumbnails/**'
       - 'record.txt'
       - 'text.txt'
-      - 'weblog/**'
 
 jobs:
   update-index:
@@ -30,9 +28,6 @@ jobs:
 
       - name: Run update.py
         run: python update.py
-  
-      - name: Run update.py
-        run: python weblog/update.py
         
       - name: Commit and push changes
         run: |

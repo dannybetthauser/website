@@ -278,7 +278,7 @@ def update_feed_from_record(record_file='record.txt', feed_file='feed.html', tex
     print(f"Feed file {feed_file} updated successfully.")
 
 # Example of using the function
-update_feed_from_record(feed_file='feed.html')
+# update_feed_from_record(feed_file='feed.html')
 update_feed_from_record(feed_file='index.html')
 
 
@@ -400,7 +400,7 @@ def replace_text_between_markers(start_string, end_string, file_to_update, new_t
         file.writelines(new_content)
 
 new_preview_header = f'''\
-  <meta property="og:title" content=" ̴̛̬̱͈̃̅͠ ̴̣͙̱͕̥͒́̓t̵̢̺͉͔͛́͗͛̈́ơ̷̗͎m̴͚͍̞͙͑̔b̵̢͇͚̱͚̀͠ȩ̶̡̡͉̭́̾̚͝t̴̼͕̯̭̜͂̐̀̿t̶̛͉̭͍͒̔̽̍ͅh̷̦̟̖̟̀̔a̷̡̺̹̾̇̋̀͆ú̴̜̔͝s̸͈̦͍͓͂e̶͎͎̖̖̔ŕ̸̢͝ ̶̢̛͕͕̇ ̸̧̦̥̇̂͘" />
+  <meta property="og:title" content="daniel's website />
   <meta property="og:image" content="./thumbnails/{get_first_line('record.txt')}" />\
 '''
 
@@ -408,8 +408,8 @@ replace_text_between_markers('<!-- START_PREVIEW_HEADER -->', '<!-- END_PREVIEW_
 
 
 new_preview_header = f'''\
-    <meta property="og:title" content="Tom's Social Media Feed" />
+    <meta property="og:title" content="Daniel's Website" />
     <meta property="og:image" content="./thumbnails/{get_first_line('record.txt')}" />\
 '''
 
-replace_text_between_markers('<!-- START_PREVIEW_HEADER -->', '<!-- END_PREVIEW_HEADER -->', 'feed.html', new_preview_header)
+# replace_text_between_markers('<!-- START_PREVIEW_HEADER -->', '<!-- END_PREVIEW_HEADER -->', 'feed.html', new_preview_header)

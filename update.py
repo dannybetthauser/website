@@ -400,7 +400,7 @@ def replace_text_between_markers(start_string, end_string, file_to_update, new_t
         file.writelines(new_content)
 
 new_preview_header = f'''\
-  <meta property="og:title" content="daniel's website />
+  <meta property="og:title" content="Daniel's Website" />
   <meta property="og:image" content="./thumbnails/{get_first_line('record.txt')}" />\
 '''
 
